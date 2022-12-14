@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- Personal Styles -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+
+  <div class="component bg-neutral-700">
+    <div class="component__icon bg-neutral-800">
+      <img src="/images/icon-star.svg" alt="An icon of a gold star">
+    </div>
+
+    <h1 class="component__title clr-neutral-100">How did we do?</h1>
+    <p class="component__text clr-neutral-200">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+    <div class="rating-banner clr-neutral-100">
+      <button class="rating-btn clr-neutral-200 bg-neutral-800 fw-bold">1</button>
+      <button class="rating-btn clr-neutral-200 bg-neutral-800 fw-bold">2</button>
+      <button class="rating-btn clr-neutral-200 bg-neutral-800 fw-bold">3</button>
+      <button class="rating-btn clr-neutral-200 bg-neutral-800 fw-bold">4</button>
+      <button class="rating-btn clr-neutral-200 bg-neutral-800 fw-bold">5</button>
+    </div>
+    <button class="btn bg-primary clr-neutral-100 fw-bold" id="submit-btn">Submit</button>
+  </div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <div class="component-thanks bg-neutral-700 hidden">
+
+    <img src="/images/illustration-thank-you.svg" alt="">
+
+    <p class="rating-selected clr-primary-400">You selected <span id="rating">5</span> out of 5</p> 
+
+  <h2 class="clr-neutral-100">Thank you!</h2>
+
+  <p class="thanks-text clr-neutral-200">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+
+    <button class="btn bg-primary clr-neutral-100 fw-bold" id="return-btn">Return to Main</button>
+  </div>
+
+  <!-- Thank you state end -->
+
+
+
+  <!-- Attribution -->
+  
+  <!-- <div class="attribution clr-neutral-100">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/KizzaD91" target="_blank">Kieran Hillman</a>.
+  </div> -->
+
+  <!-- JavaScript -->
+
+  <script src="script.js"></script>
+</body>
+</html>
